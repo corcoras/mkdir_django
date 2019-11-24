@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>From md.html</h1>
+    <h2>{{item1}}</h2>
+    <h2>{{item2}}</h2>
+<form method='POST'>{% csrf_token %}
+    <input type='text' name='dealername' placeholder="example: Sullivan Pontiac"/>
+    <input type='submit' value='create directory' />
+</form>
+{% endblock%}
